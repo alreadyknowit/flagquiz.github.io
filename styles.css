@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+#game {
+    background-color: #fff; /* White background for the game area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+    max-width: 500px; /* Maximum width for the game */
+    width: 100%; /* Full width up to max-width */
+}
+
+#score {
+    font-size: 1.5em; /* Larger font for score display */
+    margin-bottom: 20px; /* Space below the score */
+    color: #4CAF50; /* Green color for score */
+}
+
+#flag {
+    width: 100%; /* Full width for the flag image */
+    max-height: 200px; /* Limit the height of the flag */
+    border-radius: 8px; /* Rounded corners for the flag */
+    margin-bottom: 20px; /* Space below the flag */
+    border: 2px solid #4CAF50; /* Green border for the flag */
+}
+
+#input-box {
+    display: flex; /* Flexbox for input boxes */
+    justify-content: center; /* Center the input boxes */
+    flex-wrap: wrap; /* Allow wrapping of input boxes */
+    gap: 5px; /* Space between input boxes */
+}
+
+input[type="text"] {
+    width: 35px; /* Fixed width for input boxes */
+    height: 35px; /* Fixed height for input boxes */
+    font-size: 1.5em; /* Larger font for easier typing */
+    text-align: center; /* Center text inside the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+}
+
+button {
+    color: white; /* White text for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 1em; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space around buttons */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+.btn{
+    margin: 15px 20px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Not allowed cursor */
+}
